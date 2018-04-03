@@ -86,6 +86,8 @@ public class Date {
             u = y + 0;
         
         total=x+y+z+anyo1+u+dia+j;
+        if(bisiesto() && dia == 29 && mes == 2)
+            total--;
         
         if (total%7==1)
             return nombresSemana[0];
@@ -149,7 +151,7 @@ public class Date {
             u = y + 0;
         
         total=x+y+z+anyo1+u+dia+j;
-        if(bisiesto() && this._dia == 29 && this._mes == 2)
+        if(bisiesto() && dia == 29 && mes == 2)
             total--;
         
         if (total%7==1)
