@@ -5,7 +5,7 @@
 public class main {
     public static void main(String [] args)
 	{
-		Date fechaEjemplo = new Date(3, 4, 2018);
+		Date fechaEjemplo = new Date(29, 2, 2016);
                 if(fechaEjemplo.isSameYear(2017))
                     System.out.println("Es el mismo año");
                 else

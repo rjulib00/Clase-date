@@ -149,7 +149,7 @@ public class Date {
             u = y + 0;
         
         total=x+y+z+anyo1+u+dia+j;
-        if(bisiesto())
+        if(bisiesto() && this._dia == 29 && this._mes == 2)
             total--;
         
         if (total%7==1)
